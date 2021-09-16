@@ -1,20 +1,24 @@
 <%@ page contentType = "text/html; charset=utf-8" %>
 <%@ page import = "java.net.URLEncoder" %>
 <%
+	// path1는 key, URLEncoder.encode(경로: ~) 는 값
 	Cookie cookie1 = new Cookie("path1", 
 			URLEncoder.encode("경로:/chap09/path1", "utf-8"));
 	cookie1.setPath("/chap09/path1");
 	response.addCookie(cookie1);
 	
+	// path2는 key, URLEncoder.encode(경로: ~) 는 값
 	Cookie cookie2 = new Cookie("path2", 
 			URLEncoder.encode("경로:", "utf-8"));
 	response.addCookie(cookie2);
-	
+
+	// path3은 key, URLEncoder.encode(경로: ~) 는 값
 	Cookie cookie3 = new Cookie("path3",
 			URLEncoder.encode("경로:/", "utf-8"));
 	cookie3.setPath("/");
 	response.addCookie(cookie3);
 
+	// path4는 key, URLEncoder.encode(경로: ~) 는 값
 	Cookie cookie4 = new Cookie("path4",
 			URLEncoder.encode("경로:/chap09/path2", "utf-8"));
 	cookie4.setPath("/chap09/path2");

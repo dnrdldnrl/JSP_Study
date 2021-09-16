@@ -1,6 +1,6 @@
 <%@ page contentType = "text/html; charset=utf-8" %>
 <%
-	Cookie cookie = new Cookie("oneh", "1time");
+	Cookie cookie = new Cookie("onehour", "1time");
 	cookie.setMaxAge(60 * 60); // 60초(1분) * 60 = 1시간
 	response.addCookie(cookie);
 %>
