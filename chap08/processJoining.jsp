@@ -5,7 +5,7 @@
 <jsp:useBean id="memberInfo" class="chap08.member.MemberInfo" />
 <jsp:setProperty name="memberInfo" property="*" />
 <jsp:setProperty name="memberInfo" property="password"
-				 value="<%= memberInfo.getId() %>" />
+				value="<%= memberInfo.getId() %>" />
 <html>
 <head><title>가입</title></head>
 <body>
